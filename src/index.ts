@@ -13,11 +13,15 @@ app.use("/admin", AdminRoute);
 app.use("/vendor", VendorRoute);
 
 
-
+app.get("/",(req,res,next)=>{
+    res.json({
+        message:"App is healthy on "+new Date().toLocaleDateString()
+    })
+})
 
 
 
 app.listen(PORT,()=>{
     console.clear();
-    console.log(`App is listening on port ${PORT}`)
+    console.log(`App is listening on port ${PORT}`)  
 })
