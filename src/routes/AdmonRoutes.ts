@@ -1,5 +1,4 @@
 import express from "express";
-import {Request,Response,NextFunction} from "express";
 import {CreateVendor, GetVendor, GetVendorByID} from "../controllers";
 
 const router= express.Router();
