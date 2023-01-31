@@ -14,9 +14,6 @@ app.use("/vendor", VendorRoute);
 
 
 
-
-
-
 app.listen(PORT,()=>{
     console.clear();
     console.log(`App is listening on port ${PORT}`)
