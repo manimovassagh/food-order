@@ -1,8 +1,7 @@
 import express from "express"
-
+import {PORT} from "./Constants/Constants";
 
 const app=express();
-const PORT=3000
 
 
 app.use("/",(req,res)=>{
