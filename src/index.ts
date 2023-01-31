@@ -1,15 +1,12 @@
 import express from "express"
-import {PORT} from "./Constants/Constants";
-import {Request,Response} from "express";
+import {PORT} from "./config/Constants/Constants";
+import {AdminRoute,VendorRoute} from "./routes";
 
 const app=express();
+app.use("/admin", AdminRoute);
+app.use("/vendor", VendorRoute);
 
 
-app.use("/",(req:Request,res:Response)=>{
-    res.json("Hi mani it is json from the backend ")
-
-
-})
 
 app.listen(PORT,()=>{
     console.log(`App is listening on port ${PORT}`)
