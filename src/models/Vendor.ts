@@ -31,8 +31,7 @@ const VendorSchema = new Schema({
     coverImage: {type: [String]},
     rating: {type: Number},
     foods: [{
-        //@ts-ignore
-        type: mongoose.SchemaType.ObjectId,
+        type: mongoose.SchemaTypes.ObjectId,
         ref: 'food'
     }],
 
