@@ -15,7 +15,7 @@ interface VendorDoc extends Document {
     rating: number;
     foods: any;
 }
-
+//schema for DB
 const VendorSchema = new Schema({
 
     name: {type: String, require: true},
